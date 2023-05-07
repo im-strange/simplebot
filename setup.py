@@ -7,6 +7,6 @@ setup(
   author="Samuel Genoguin",
   packages=find_packages(),
   packages_data={
-    "simplebot": ["simplebot/sample-intents.json"]
+    "simplebot": ["sample-intents.json"]
   }
 )
