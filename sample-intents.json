@@ -1,0 +1,48 @@
+{"intents":
+[
+{"tag": "no_result",
+ "patterns": [],
+ "responses": ["•••"]
+},
+
+{"tag": "thanking",
+ "patterns": ["thank you", "thanks", "thankyou"],
+ "responses": ["You are welcome!", "You're welcome!", "No problem!"]
+},
+
+{"tag": "greeting",
+ "patterns": ["hi", "hello", "hey", "sup"],
+ "responses": ["Hello there!", "Hi there!"]
+},
+
+{"tag": "goodbye",
+ "patterns": ["bye", "goodbye"],
+ "responses": ["Sure, nice talking to you!", "Sure, good bye!"]
+},
+
+{"tag": "how_are_you",
+ "patterns": ["how are you"],
+ "responses": ["I'm good, thanks!", "I am well, thanks!"]
+},
+
+{"tag": "max_name",
+ "patterns": ["what is your name", "who are you"],
+ "responses": ["My name is Max.", "I am Max."]
+},
+
+{"tag": "author_name",
+ "patterns": ["who created you"],
+ "responses": ["You created me."]
+},
+
+{"tag": "user_name",
+ "patterns": ["what is my name"],
+ "responses": ["I don't know your name."]
+},
+
+{"tag": "description",
+ "patterns": ["what are you", "what can you do", "list functions"],
+ "responses": ["I am a simple chatbot created with SimpleBot."]
+}
+]
+}
