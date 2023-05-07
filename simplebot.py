@@ -4,6 +4,7 @@ from nltk.tokenize import word_tokenize
 import json
 import random
 import math
+import os
 
 # main class
 class SimpleBot:
@@ -60,12 +61,15 @@ class SimpleBot:
       category_function = self.functions.get(category)
       return category_function()
 
+# chatbot implementation
 class Chatbot:
   def __init__(self):
     self.json_file = "sample-intents.json"
+    self.json_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), self.json_file))
     self.bot = SimpleBot()
     self.bot.train(self.json_file)
 
+  # have a conversation
   def talk(self):
     try:
       while True:
