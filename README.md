@@ -8,7 +8,7 @@ pip install git+https://github.com/im-strange/simplebot.git
 ```
 
 ## Documentation
-#### Setting up `intents.json`
+### Setting up `intents.json`
 
 The `SimpleBot` class takes json file where intents are listed.
 The format of `.json` file should be as following:
@@ -48,7 +48,7 @@ The format of `.json` file should be as following:
 
 > Note: when none of the given tags fits with the input, it will redirect to the first tag, which is in this example the `no_result` tag.
 
-#### Coding your chatbot
+### Coding your chatbot
 
 After creating your `intents.json` where tags, patterns, and responses
 are listed, coding the bot is the next step.
@@ -69,7 +69,7 @@ In the code above, we import the class `SimpleBot` and initialize it as variable
 Then, we called the `train()` function to set the `intents.json`. Finally, we called the `respond()` function to give the response for the given
 input, and print it in the end.
 
-#### Adding custom function
+### Custom function
 
 With `SimpleBot` you can add custom function when particular tag is reached.
 We can do this by leaving the `responses` list blank.
