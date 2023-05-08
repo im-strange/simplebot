@@ -47,6 +47,7 @@ The format of `.json` file should be as following:
 ```
 
 > Note: when none of the given tags fits with the input, it will redirect to the first tag, which is in this example the `no_result` tag.
+<br>
 
 ### Coding your chatbot
 
@@ -68,6 +69,7 @@ print(response)
 In the code above, we import the class `SimpleBot` and initialize it as variable `bot`.
 Then, we called the `train()` function to set the `intents.json`. Finally, we called the `respond()` function to give the response for the given
 input, and print it in the end.
+<br>
 
 ### Custom function
 
