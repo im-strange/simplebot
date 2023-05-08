@@ -64,7 +64,7 @@ class SimpleBot:
 # chatbot implementation
 class Chatbot:
   def __init__(self):
-    self.json_file = "sample-intents.json"
+    self.json_file = "data/sample-intents.json"
     self.json_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), self.json_file)
     self.bot = SimpleBot()
     self.bot.train(self.json_file_path)
