@@ -4,7 +4,7 @@ Python simple chatbot wrapper. <br>![](https://badgen.net/badge/license/MIT/blue
 ## Installation
 
 ```
-  pip install git+https://github.com/im-strange/simplebot.git
+pip install git+https://github.com/im-strange/simplebot.git
 ```
 
 ## Documentation
