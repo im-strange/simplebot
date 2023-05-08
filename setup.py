@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
   name="simplebot",
@@ -6,9 +6,7 @@ setup(
   url="https://github.com/im-strange/simplebot.git",
   author="Samuel Genoguin",
   description="Module for your simple chatbot.",
-  packages=find_packages(),
-  include_package_data=True,
-  package_data={
-    "simplebot": ["data/sample-intents.json"]
-  }
+  packages=[
+    "simplebot", "data"
+  ]
 )
