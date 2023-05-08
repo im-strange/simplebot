@@ -6,7 +6,7 @@ setup(
   url="https://github.com/im-strange/simplebot.git",
   author="Samuel Genoguin",
   packages=find_packages(),
-  packages_data={
-    "simplebot": ["sample-intents.json"]
+  package_data={
+    "": ["data/sample-intents.json"]
   }
 )
