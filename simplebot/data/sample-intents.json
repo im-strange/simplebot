@@ -25,7 +25,7 @@
  "responses": ["I'm good, thanks!", "I am well, thanks!"]
 },
 
-{"tag": "max_name",
+{"tag": "bot_name",
  "patterns": ["what is your name", "who are you"],
  "responses": ["My name is Max.", "I am Max."]
 },

@@ -1,4 +1,3 @@
-
 import nltk
 from nltk.tokenize import word_tokenize
 import json
@@ -9,7 +8,9 @@ import os
 # main class
 class SimpleBot:
   def __init__(self):
-    self.data = None
+    self.default_intents = "data/sample-intents.json"
+    self.intents_path = f"{os.path.dirname(os.path.abspath(__file__))}/{self.default_intents}"
+    self.data = json.load(open(self.intents_path))
     self.functions = {}
 
   # set json file
@@ -73,9 +74,10 @@ class Chatbot:
   def talk(self):
     try:
       while True:
-        user = input("You> ")
+        user = input("You: ")
         bot_response = self.bot.respond(user)
-        print(f"Bot> {bot_response}")
+        print(f"Bot: {bot_response}")
     except KeyboardInterrupt:
-      print("\rBot> Bye!")
+      print("\rBot: Bye!")
       exit()
+
