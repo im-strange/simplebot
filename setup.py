@@ -7,6 +7,6 @@ setup(
   author="Samuel Genoguin",
   description="Module for your simple chatbot.",
   packages=[
-    "simplebot", "data"
+    "simplebot"
   ]
 )
