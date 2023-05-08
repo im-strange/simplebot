@@ -45,6 +45,7 @@ The format of `.json` file should be as following:
   ]
 }
 ```
+<br>
 
 > Note: when none of the given tags fits with the input, it will redirect to the first tag, which is in this example the `no_result` tag.
 <br>
