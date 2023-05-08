@@ -47,7 +47,7 @@ The format of `.json` file should be as following:
 ```
 
 > Note: when none of the given tags fits with the input, it will redirect to the first tag, which is in this example the `no_result` tag.
-<hr>
+<br>
 <br>
 
 ### Coding your chatbot
@@ -66,11 +66,12 @@ print(response)
 # output:
 # Hi there!
 ```
+<br>
 
 In the code above, we import the class `SimpleBot` and initialize it as variable `bot`.
 Then, we called the `train()` function to set the `intents.json`. Finally, we called the `respond()` function to give the response for the given
 input, and print it in the end.
-<br>
+<br><br>
 
 ### Custom function
 
@@ -94,6 +95,7 @@ We can do this by adding new tag to `intents.json`
 }
   ...
 ```
+<br>
 
 In the code above, we added `weather` tag that has no responses.
 Then, we can code the bot and add the function
@@ -117,6 +119,7 @@ bot.set_functions(custom_functions)
 response = bot.respond("what's the weather today?")
 print(response)
 ``` 
+<br>
 
 In the code above, noticed that we added a function `get_weather` which returns string object. We then set the function by calling the `set_functions()`. We set the argument to variable `custom_functions` which
 has tags as key, and function as value. Now, when `weather` tag is reached,
