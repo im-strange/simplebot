@@ -77,7 +77,7 @@ print(response)
 In the code above, we import the class `SimpleBot` and initialize it as variable `bot`.
 Then, we called the `train()` function to set the `intents.json`. Finally, we called the `respond()` function to give the response for the given
 input, and print it in the end.
-<br>
+<br><br>
 
 ## Custom function
 
