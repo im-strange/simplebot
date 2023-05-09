@@ -55,7 +55,7 @@ The format of `.json` file should be as following:
 > Note: when none of the given tags fits with the input, it will redirect to the first tag, which is in this example the `no_result` tag.
 <br>
 
-### Coding your chatbot
+## Coding your chatbot
 
 After creating your `intents.json` where tags, patterns, and responses
 are listed, coding the bot is the next step.
@@ -79,7 +79,7 @@ Then, we called the `train()` function to set the `intents.json`. Finally, we ca
 input, and print it in the end.
 <br>
 
-### Custom function
+## Custom function
 
 With `SimpleBot` you can add custom function when particular tag is reached.
 We can do this by leaving the `responses` list blank.
@@ -135,6 +135,6 @@ In the code above, noticed that we added a function `get_weather` which returns 
 We set the argument to variable `custom_functions` which
 has tags as key, and function as value. Now, when `weather` tag is reached,
 The returned object will be sent by bot.
-<br>
+<br><br>
 
 > This repo is Licensed with MIT.
