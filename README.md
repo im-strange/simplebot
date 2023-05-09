@@ -2,8 +2,10 @@
 
 <div align="center">
   <p> Python simple chatbot wrapper </p>
+  
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/SimpleBot-1.0.0-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Package-grey?style=for-the-badge&logo=python&logoColor=white">
 </div>
   
 ## Installation
