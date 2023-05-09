@@ -127,9 +127,12 @@ bot.set_functions(custom_functions)
 response = bot.respond("what's the weather today?")
 print(response)
 ``` 
+<br><br>
+
+In the code above, noticed that we added a function `get_weather` which returns string object. We then set the function by calling the `set_functions()`.
 <br>
 
-In the code above, noticed that we added a function `get_weather` which returns string object. We then set the function by calling the `set_functions()`. We set the argument to variable `custom_functions` which
+We set the argument to variable `custom_functions` which
 has tags as key, and function as value. Now, when `weather` tag is reached,
 The returned object will be sent by bot.
 <br>
