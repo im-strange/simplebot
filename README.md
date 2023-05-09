@@ -127,7 +127,7 @@ bot.set_functions(custom_functions)
 response = bot.respond("what's the weather today?")
 print(response)
 ``` 
-<br><br>
+<br>
 
 In the code above, noticed that we added a function `get_weather` which returns string object. We then set the function by calling the `set_functions()`.
 <br>
