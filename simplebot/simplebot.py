@@ -63,6 +63,13 @@ class SimpleBot:
       category_function = self.functions.get(category)
       return category_function()
 
+  # talk with the chatbot
+  def talk(self, name="Bot"):
+    while True:
+      user = input("You: ")
+      response = self.respond(user)
+      print(f"{name}: {response}")
+
 # chatbot implementation
 class Chatbot:
   def __init__(self):
