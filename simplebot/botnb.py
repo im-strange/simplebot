@@ -56,15 +56,16 @@ class BotNB:
     def respond(self, text):
         vector = self.vectorizer.transform([text.lower()])
         predicted_class = self.model.predict(vector)[0]
+        pred_prob = self.model.predict_proba(vector)[0][0]
 
         class_response_pool = [d["responses"] for d in self.data["intents"] if d["tag"] == predicted_class][0]
         response = random.choice(class_response_pool)
 
-        return (predicted_class, response)
+        return (predicted_class, response, pred_prob)
 
 if __name__ == "__main__":
     mybot = BotNB()
-    mybot.train("intents.json")
+    mybot.train("data/intents.json")
     report = mybot.report
     print(report)
 
