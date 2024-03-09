@@ -4,7 +4,7 @@ setup(
   name="simplebot",
   version="1.0.0",
   url="https://github.com/im-strange/simplebot.git",
-  author="Samuel Genoguin",
+  author="im-strange",
   description="Module for your simple chatbot.",
   include_package_data=True,
   packages=[
